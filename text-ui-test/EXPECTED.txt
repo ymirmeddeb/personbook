@@ -1,0 +1,156 @@
+|| ===================================================
+|| ===================================================
+|| Welcome to your PersonBook!
+|| PersonBook - Version 1.0
+|| Launch command format: java seedu.personbook.Main
+|| ===================================================
+|| Enter command: || [Command entered:  sfdfd]
+|| Invalid command format! 
+|| help: Shows program usage instructions.
+|| Example: help
+|| ===================================================
+|| Enter command: || [Command entered:  delete 1]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  add wrong args wrong args]
+|| Invalid command format! 
+|| add: Adds a person to the PersonBook. Parameters: NAME p/PHONE
+|| Example: add John Doe p/98765432
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name 12345]
+|| Invalid command format! 
+|| add: Adds a person to the PersonBook. Parameters: NAME p/PHONE
+|| Example: add John Doe p/98765432
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/12345]
+|| New person added: Valid Name Phone: 12345
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/12345 abc]
+|| Person phone numbers should only contain numbers
+|| ===================================================
+|| Enter command: || [Command entered:  add []\[;] p/12345]
+|| Person names should be spaces or alphabetic characters
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/not_numbers]
+|| Person phone numbers should only contain numbers
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/12345 e/notAnEmail]
+|| Person phone numbers should only contain numbers
+|| ===================================================
+|| Enter command: || [Command entered:  add Valid Name p/12345]
+|| This person already exists in the PersonBook
+|| ===================================================
+|| Enter command: || [Command entered:  add Adam Brown p/111111]
+|| New person added: Adam Brown Phone: 111111
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Adam Brown Phone: 111111
+|| 
+|| 2 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Betsy Choo p/222222]
+|| New person added: Betsy Choo Phone: 222222
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Adam Brown Phone: 111111
+|| 	3. Betsy Choo Phone: 222222
+|| 
+|| 3 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Charlie Dickson p/333333]
+|| New person added: Charlie Dickson Phone: 333333
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Adam Brown Phone: 111111
+|| 	3. Betsy Choo Phone: 222222
+|| 	4. Charlie Dickson Phone: 333333
+|| 
+|| 4 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Dickson Ee p/444444]
+|| New person added: Dickson Ee Phone: 444444
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Adam Brown Phone: 111111
+|| 	3. Betsy Choo Phone: 222222
+|| 	4. Charlie Dickson Phone: 333333
+|| 	5. Dickson Ee Phone: 444444
+|| 
+|| 5 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Esther Potato p/555555]
+|| New person added: Esther Potato Phone: 555555
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Adam Brown Phone: 111111
+|| 	3. Betsy Choo Phone: 222222
+|| 	4. Charlie Dickson Phone: 333333
+|| 	5. Dickson Ee Phone: 444444
+|| 	6. Esther Potato Phone: 555555
+|| 
+|| 6 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  add Esther Potato p/555555]
+|| This person already exists in the PersonBook
+|| ===================================================
+|| Enter command: || [Command entered:  delete]
+|| Invalid command format! 
+|| delete: Deletes the person identified by the index number used in the last person listing.
+|| Parameters: INDEX
+|| Example: delete 1
+|| ===================================================
+|| Enter command: || [Command entered:  delete should be only one number]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  delete -1]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  delete 0]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  delete 3]
+|| Deleted Person: Betsy Choo Phone: 222222
+|| ===================================================
+|| Enter command: || [Command entered:  delete 2]
+|| Deleted Person: Adam Brown Phone: 111111
+|| ===================================================
+|| Enter command: || [Command entered:  delete 2]
+|| Deleted Person: Charlie Dickson Phone: 333333
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Dickson Ee Phone: 444444
+|| 	3. Esther Potato Phone: 555555
+|| 
+|| 3 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  delete 4]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Valid Name Phone: 12345
+|| 	2. Dickson Ee Phone: 444444
+|| 	3. Esther Potato Phone: 555555
+|| 
+|| 3 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  delete 1]
+|| Deleted Person: Valid Name Phone: 12345
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Dickson Ee Phone: 444444
+|| 	2. Esther Potato Phone: 555555
+|| 
+|| 2 persons listed!
+|| ===================================================
+|| Enter command: || [Command entered:  exit]
+|| Exiting PersonBook as requested ...
+|| ===================================================
+|| Good bye!
+|| ===================================================
+|| ===================================================

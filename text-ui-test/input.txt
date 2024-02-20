@@ -1,0 +1,81 @@
+##########################################################
+# invalid command
+##########################################################
+
+  # should recognise invalid command
+  sfdfd
+
+##########################################################
+# commands using list index before any listing created
+##########################################################
+
+  # should show appropriate message when no listing has happened yet
+  delete 1
+
+##########################################################
+# test add person command, setup state for further tests
+##########################################################
+
+  # should catch invalid args format
+  add wrong args wrong args
+  add Valid Name 12345
+  add Valid Name p/12345
+  add Valid Name p/12345 abc
+
+  # should catch invalid person data
+  add []\[;] p/12345
+  add Valid Name p/not_numbers
+  add Valid Name p/12345 e/notAnEmail
+  add Valid Name p/12345
+
+  # should add correctly and list non private information
+  add Adam Brown p/111111
+  list
+  add Betsy Choo p/222222
+  list
+  add Charlie Dickson p/333333
+  list
+  add Dickson Ee p/444444
+  list
+  add Esther Potato p/555555
+  list
+
+  # should not allow adding duplicate persons
+  add Esther Potato p/555555
+
+##########################################################
+# test delete person command
+##########################################################
+
+# last active view: [1] betsy [2] charlie
+
+  # should catch invalid args format
+  delete
+  delete should be only one number
+
+  # should catch invalid index
+  delete -1
+  delete 0
+  delete 3
+
+  # should catch attempt to delete something already deleted
+  delete 2
+  delete 2
+
+  # should have deleted based on last active view's index
+  list
+
+  # deletes correct person
+  delete 4
+  list
+
+  # listing indexes get updated on next request
+  delete 1
+  list
+
+##########################################################
+# test exit command
+##########################################################
+
+  # exits properly
+  exit
